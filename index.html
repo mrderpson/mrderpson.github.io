@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 
+        Persoonlijkheidsprofiel
+    </title>
+</head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body{
+            background-image: url(stad.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav{
+            margin-bottom: 50px;
+        }
+        ul{
+            list-style-type: none;
+            overflow:hidden;
+            background-color: dodgerblue;
+            border:1px solid blue;
+            position:fixed;
+            top: 0;
+            width: 95%;  
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            
+        }
+        li a:hover{
+            background-color: rgb(230, 242, 255);
+        }
+        img {
+              padding-top:30px;
+              padding-bottom:30px;
+              display: block;
+              margin-left: auto;
+              margin-right:auto;
+              height: 225px;
+              width:  225px;
+            }
+        .shell {
+            padding-bottom: 30px;
+        }
+        table, th ,td 
+            {
+              border-collapse:collapse;  
+              border: 2px solid black;
+              width: 800px;
+              height: 25px;
+              text-align:center;
+              margin-left:auto;
+              margin-right:auto;
+              text-align:left;
+              font-family: 'Courier New', Courier, monospace;
+            }
+        .mastered{
+            text-align:center;   
+        }
+        div {
+              text-align: center;              
+           }
+        table#t02 tr:nth-child(odd){
+            background-color: rgb(230, 242, 255);
+        }
+        table#t02 tr:nth-child(even){
+            background-color: rgb(153, 204, 255);
+        }
+        table#t02 tr:hover{
+            background-color:dodgerblue;
+        }
+        table#t01 tr:nth-child(odd){
+            background-color: rgb(230, 242, 255);
+        }
+        table#t01 tr:nth-child(even){
+            background-color: rgb(153, 204, 255);
+   
+        }
+    </style>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li><a href= "index.html">Home</a></li>
+                <li><a href= "hobby.html">Hobby</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+             </ul>    
+        </div>
+    </nav>
+<img src="profielfoto.jpg">
+  <div class="shell">
+  <table id="t01">
+    <tr>
+      <th>Naam</th>
+      <th>Geboortedatum</th>
+      <th>woonplaats</th>
+      <th>Hobby's</th>
+    </tr>
+    <tr>
+      <td>Albert Sjoerd Berends</td>
+      <td>6 Oktober 1994</td>
+      <td>Boornbergum</td>
+      <td><a href="hobby.html">Mijn hobby's</a></td>
+    </tr>
+  </table>
+</div>
+<div>
+  <table id="t02">
+      <tr>
+          <th colspan="3" class="mastered"><h4>Beheerste programmeertalen</h4></th>
+      </tr>
+      <tr>
+          <td>html</td>
+          <td>CSS</td>
+          <td>C#</td>  
+      </tr>
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/HTML">
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5_logo_and_wordmark" style="width:100px;height:100px;">
+          </a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS3_logo_and_wordmark" style="width:100px;height:100px;">
+          </a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg"
+              alt="C_Sharp_wordmark" style="width:100px;height: 100px;">
+          </a>
+        </td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

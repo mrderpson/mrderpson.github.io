@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Persoonlijkheidsprofiel
+    </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    body{
+        background-image: url(potlood.jpg);
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+    }
+    nav{
+        margin-bottom: 75px;
+    }
+    ul{
+        list-style-type: none;
+        overflow:hidden;
+        background-color: dodgerblue;
+        border:1px solid blue;
+        position:fixed;
+        top: 0;
+        width: 95%;  
+    }
+    li{
+        float: left;
+    }
+    li a{
+    display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;  
+    }
+    li a:hover{
+        background-color: rgb(230, 242, 255);
+    }
+input{
+    background-color: rgb(230, 242, 255);
+    border-radius: 5px;
+}
+input:focus{
+    background-color: white;
+}
+textarea{
+    resize:none;
+}
+fieldset{
+    background-color: white;
+}
+</style>
+<body>
+<div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href= "index.html">Home</a></li>
+                    <li><a href= "hobby.html">Hobby</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                 </ul>    
+            </div>
+        </nav>
+</div>
+<div>
+    <h1>contact</h1>
+</div>
+<div>
+    <form>
+        <fieldset>
+            <legend>Persoonlijke informatie:</legend>
+            Voornaam:<br>
+            <input type="text" name="firstname">
+            <br>
+            Achternaam:<br>
+            <input type="text" name="lastname">
+            <br>
+            E-mail:<br>
+            <input type="email" e-mail="e-mail adres"> <br> <br>
+            <input type="radio" name="gender" value="male" checked> Man<br>
+            <input type="radio" name="gender" value="female" checked> Vrouw<br>
+            <input type="radio" name="gender" value="other" checked> Overig<br><br>
+            <input type="submit" value="verzenden">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h3>Comment</h3>
+</div>
+<div>
+    <form>
+        <fieldset>
+            <legend>Onderwerp 
+                <select name="Onderwerp">
+                    <option value="programming">Programmeer talen</option>
+                    <option value="hobby's">Muziek</option>
+                    <option value="hobby's">gaming</option>
+                    <option value="info">Info</option>
+                    <option value="overig">Overig</option>
+                </select>
+            </legend>
+            <textarea name="comment" rows="20" cols="162">
+            </textarea>
+            <br>
+            <input type="submit" value="Verzenden">
+        </fieldset>   
+    </form>
+</div>
+</body>
+</html>
